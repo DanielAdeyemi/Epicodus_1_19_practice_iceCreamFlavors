@@ -5,9 +5,9 @@ $(document).ready(function() {
     flavors.push(user);
   }
 
-  flavors.forEach(flavor) {
-    $(ul).prepend("<li>" + flavor + "</li>");
-  }
+  flavors.forEach(function(flavor) {
+    $("ul").append("<li>" + flavor + "</li>");
+  });
 
 
 });
